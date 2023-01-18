@@ -9,24 +9,22 @@ import Contact from './components/Contact';
 import Singleproduct from './components/Singleproduct';
 import Cart from './components/Cart';
 import Error from './components/Error';
-import Header from './components/Header';
+import Header from './components/navigation/Header';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/singleproduct/:id" element={<Singleproduct />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </Router>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/singleproduct/:id" element={<Singleproduct />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
