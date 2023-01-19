@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --Primary: #d8d6d6;
+  --Secondary: #ff5757;
+  --Tertiary: #1c1c1c;
+  --SecondaryLight: #ff8c8c;
+}
+
+/* Navigation Section CSS */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--Primary);
+}
+
+.nav-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: #1c1c1c 0px 0px 10px;
+}
+
+.navlink-folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav-li:hover {
+  background-color: var(--Secondary);
+  border-radius: 20px;
+  box-shadow: #1c1c1c 0px 0px 10px;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: var(--Tertiary);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Hero Section CSS */
+
+.hero-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome-container {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  color: var(--Tertiary);
+}
+
+.hero-btn {
+  margin-top: 10px;
+  background-color: #ff5757;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 1px;
+  box-shadow: #1c1c1c 0px 0px 10px;
+  cursor: pointer;
+}
+
+.hero-p1 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--Secondary);
+}
+
+.hero-img-folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+figure::after {
+  content: '';
+  width: 60%;
+  height: 65%;
+  background-color: var(--SecondaryLight);
+  position: absolute;
+  left: 42%;
+  top: 0rem;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 300px;
+  height: 200px;
+}
